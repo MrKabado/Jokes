@@ -14,11 +14,13 @@ function myFunction(y) {
 
     btnAns.onclick = function() {
         jokeAns.innerHTML = y.punchline;
+        alert('HAHAH');
     }
 
     btnRef.onclick = function() {
         location.reload();
     }
+    
 }
 
 if ('serviceWorker' in navigator) {
