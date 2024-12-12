@@ -1,0 +1,23 @@
+#btn-answer, #btn-refresh {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px;
+    flex: auto;
+    align-items: center;
+    border-radius: 5px;  
+}
+
+#btn-answer:hover, #btn-refresh:hover {
+    background-color: white;
+    color: #14161A;
+}
+
+#joke-ans {
+    height: 30px;
+    width: fit-content;
+    padding: 5px;
+}
+
+#joke-holder {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
