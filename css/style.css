@@ -1,14 +1,25 @@
+body {
+    color: white !important;
+}
+
+#global-holder {
+    background-image: url(/img/blue-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #btn-answer, #btn-refresh {
-    border: 1px solid white;
+    border: 1px solid none;
+    background-color: gray;
     padding: 10px;
     margin: 5px;
-    flex: auto;
-    align-items: center;
     border-radius: 5px;  
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #btn-answer:hover, #btn-refresh:hover {
-    background-color: white;
+    background-color: transparent;
     color: #14161A;
 }
 
@@ -20,4 +31,5 @@
 
 #joke-holder {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: aliceblue;
 }

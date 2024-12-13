@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="has-background-white">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="has-text-black">
+<body>
     <div id="global-holder" class="is-flex is-justify-content-center is-align-items-center" style="height: 100vh">
         <div id="joke-holder" class="box p-5" style="width: 500px; height: auto">
-            <h1 class="is-size-1">JOKES</h1>
+            <h1 class="is-size-1 has-text-black">JOKES</h1>
             <br><br>
 
-            <p id="joke-dis">Loadingg...</p>
+            <p id="joke-dis" class="has-text-black">Loadingg...</p>
             <br><br>
-            <p id="joke-ans" class=""></p>
+            <p id="joke-ans" class="has-text-black"></p>
             <br><br>
 
-            <button id="btn-answer">Show Joke</button>
-            <button id="btn-refresh">Refresh Joke</button>
+            <button id="btn-answer" class="is-flex-auto has-align-items-center">Show Joke</button>
+            <button id="btn-refresh" class="is-flex-auto has-align-items-center">Refresh Joke</button>
         </div>
     </div>
 </body>

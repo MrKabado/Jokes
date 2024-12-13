@@ -14,7 +14,7 @@ function myFunction(y) {
 
     btnAns.onclick = function() {
         jokeAns.innerHTML = y.punchline;
-        alert('HAHAH');
+        alert('dapat mo tawa ka ha!');
     }
 
     btnRef.onclick = function() {
