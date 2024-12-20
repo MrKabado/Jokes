@@ -14,6 +14,9 @@ function myFunction(y) {
 
     btnAns.onclick = function() {
         jokeAns.innerHTML = y.punchline;
+
+        this.classList.add('###');
+        this.disabled = true;
     }
 
     btnRef.onclick = function() 

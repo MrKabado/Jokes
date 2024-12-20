@@ -40,6 +40,23 @@ body {
     border: 2px solid #8DA4D0;
 }
 
+.button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  .button.disabled::after {
+    content: " (Clicked)";
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+  }
+
+
 @media screen and (max-width: 768px) {
     #joke-holder {
         max-width: 95%;
