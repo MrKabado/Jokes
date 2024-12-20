@@ -14,10 +14,10 @@ function myFunction(y) {
 
     btnAns.onclick = function() {
         jokeAns.innerHTML = y.punchline;
-        alert('dapat mo tawa ka ha!');
     }
 
-    btnRef.onclick = function() {
+    btnRef.onclick = function() 
+    {
         location.reload();
     }
     

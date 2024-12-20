@@ -1,35 +1,57 @@
 body {
-    color: white !important;
-}
-
-#global-holder {
+    font-family: sans-serif;
     background-image: url(/img/blue-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
-#btn-answer, #btn-refresh {
-    border: 1px solid none;
-    background-color: gray;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;  
-    color: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-#btn-answer:hover, #btn-refresh:hover {
-    background-color: transparent;
-    color: #14161A;
-}
-
-#joke-ans {
-    height: 30px;
-    width: fit-content;
-    padding: 5px;
+#global-holder {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #joke-holder {
+    margin: 10% auto;
+    max-width: 50%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.title {
+    color: #8DA4D0;
+}
+
+#joke-ans {
+    height: 20px;
+}
+
+.button {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 100px;
+    background-color: #8DA4D0;
+    transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-color: aliceblue;
+    color: #8DA4D0;
+    border: 2px solid #8DA4D0;
+}
+
+@media screen and (max-width: 768px) {
+    #joke-holder {
+        max-width: 95%;
+    }
+    .title {
+        font-size: 1.5rem; 
+    }
+    .p {
+        font-size: 1rem;
+    }
 }
