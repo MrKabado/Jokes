@@ -25,6 +25,10 @@ body {
     color: #8DA4D0;
 }
 
+#joke-dis, #joke-ans {
+    color: #ABB1BF;
+}
+
 .button {
     border: 2px solid transparent;
     border-radius: 8px;

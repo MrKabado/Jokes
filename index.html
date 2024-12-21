@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOKES FOR YOU</title>
-    <link rel="icon" href="/img/logo.jpg" type="image/x-icon">
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+
 
     <script src="/js/app.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="manifest" href="/js/manifest.json">
 </head>
 <body>
     <section class="section">
@@ -19,11 +22,17 @@
                 <p id="joke-dis" class="has-text-centered mt-4"></p><br>
                 <p id="joke-ans" class="has-text-centered mt-4"></p>
                 <div class="buttons mt-4 is-centered">
-                    <button id="btn-answer" class="button"><i class="fa-solid fa-face-grin-tongue-wink"></i></button>
-                    <button id="btn-refresh" class="button ml-2"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    <button id="btn-answer" class="button">Show<i class="fa-solid fa-face-grin-tongue-wink pl-1"></i></button>
+                    <button id="btn-refresh" class="button ml-2">Refresh<i class="fa-solid fa-arrows-rotate pl-1"></i></button>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/js/service-worker.js');
+        }
+    </script>
 </body>
 </html>
